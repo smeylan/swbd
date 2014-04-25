@@ -1,0 +1,29 @@
+% latex.default(coefs, file = "/Users/stephan/Dropbox/Berkeley/research/telephone/Cogsci/tables/lexDivMixedModel_sig.tex",      title = "", table.env = FALSE, booktabs = TRUE) 
+%
+\begin{table*}
+\begin{tabular}{llrrrrl}
+\toprule
+\multicolumn{2}{l}{}&\multicolumn{1}{c}{Coef $\beta$}&\multicolumn{1}{c}{SE($\beta$)}&\multicolumn{1}{c}{Approx. $df$}&\multicolumn{1}{c}{$t$}&\multicolumn{1}{c}{$Pr(>|t|)$}\tabularnewline
+\midrule
+& Intercept&$-15.32$&$3.15$&$2765.75$&$-4.86$&\textbf{\textless .0001}\tabularnewline
+\multirow{13}{*}{\rotatebox{90}{Speaker}} & Age&$  0.27$&$0.02$&$2741.54$&$12.79$&\textbf{\textless .0001}\tabularnewline
+& Speaker Gender: Male&$  3.47$&$0.47$&$2764.69$&$ 7.32$&\textbf{\textless .0001}\tabularnewline
+& Speaker Education: Less than College&$  0.04$&$2.97$&$2743.82$&$ 0.01$&\textgreater 1\tabularnewline
+& Speaker Education: College&$  3.51$&$2.84$&$2748.28$&$ 1.24$&\textgreater 0.2\tabularnewline
+& Speaker Education: Some College&$  4.53$&$2.85$&$2749.22$&$ 1.59$&\textgreater 0.1\tabularnewline
+& Speaker Education: Unknown&$  7.88$&$3.38$&$2746.50$&$ 2.33$&\textbf{\textless .05}\tabularnewline
+& Speaker Dialect: New England&$ -2.60$&$1.33$&$2717.47$&$-1.96$&\textgreater 0.1\tabularnewline
+& Speaker Dialect: North Midland&$ -2.96$&$1.04$&$2737.57$&$-2.83$&\textbf{\textless .01}\tabularnewline
+& Speaker Dialect: Northern&$ -1.00$&$1.10$&$2732.89$&$-0.90$&\textgreater 0.4\tabularnewline
+& Speaker Dialect: NYC&$ -3.13$&$1.23$&$2733.32$&$-2.55$&\textbf{\textless .05}\tabularnewline
+& Speaker Dialect: South Midland&$ -0.59$&$0.96$&$2736.46$&$-0.61$&\textgreater 0.5\tabularnewline
+& Speaker Dialect: Southern&$ -2.60$&$1.12$&$2732.45$&$-2.32$&\textbf{\textless .05}\tabularnewline
+& Speaker Dialect: Western&$ -2.70$&$1.07$&$2750.17$&$-2.51$&\textbf{\textless .05}\tabularnewline
+\hline
+\multirow{6}{*}{\rotatebox{90}{Interlocutor}} & Gender: Male&$  1.70$&$0.46$&$2764.48$&$ 3.73$&\textbf{\textless .001}\tabularnewline
+& Interlocutor Age&$  0.05$&$0.02$&$2745.18$&$ 2.34$&\textbf{\textless .05}\tabularnewline
+\bottomrule
+\end{tabular}
+\caption{Fixed effects from a linear mixed effects regression model for speaker lexical diversity in which topic was treated as a random effect. Degrees of freedom are calculated according to Sattherwaite's approximation.}
+\label{lexDivLMER}
+\end{table*}
